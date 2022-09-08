@@ -1,0 +1,11 @@
+.small-btn {
+  @apply m-1 shadow bg-indigo-800 hover:bg-indigo-700 text-white rounded py-[4px] px-[10px] text-sm;
+}
+
+.normal-btn {
+  @apply m-1 shadow bg-indigo-800 hover:bg-indigo-700 text-white rounded py-[5px] px-[20px] text-lg;
+}
+
+.lg-btn {
+  @apply m-1 shadow bg-indigo-800 hover:bg-indigo-700 text-white rounded py-[10px] px-[150px] text-xl;
+}
