@@ -1,11 +1,17 @@
 <button
+  class="m-1 shadow bg-indigo-800 hover:bg-indigo-700 text-white rounded"
   [ngClass]="{
-    'm-1 shadow bg-indigo-800 hover:bg-indigo-700 text-white rounded py-[4px] px-[10px] text-sm':
-      size === 'small',
-    'm-1 shadow bg-indigo-800 hover:bg-indigo-700 text-white rounded py-[5px] px-[20px] text-lg':
-      size === 'normal',
-    'm-1 shadow bg-indigo-800 hover:bg-indigo-700 text-white rounded py-[10px] px-[150px] text-xl':
-      size === 'lg'
+    'py-[4px]': size === 'small',
+    'px-[10px]': size === 'small',
+    'text-sm': size === 'small',
+
+    'py-[5px]': size === 'normal',
+    'px-[20px]': size === 'normal',
+    'text-lg': size === 'normal',
+
+    'py-[10px]': size === 'lg',
+    'px-[150px]': size === 'lg',
+    'text-xl': size === 'lg'
   }"
 >
   <ng-content></ng-content>
